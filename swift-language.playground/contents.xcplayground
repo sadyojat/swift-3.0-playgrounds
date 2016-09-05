@@ -9,5 +9,6 @@
         <page name='Todo Items'/>
         <page name='Subscripts'/>
         <page name='ARC'/>
+        <page name='Enumerations'/>
     </pages>
 </playground>
