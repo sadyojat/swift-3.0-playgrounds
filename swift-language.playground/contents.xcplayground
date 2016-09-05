@@ -8,5 +8,6 @@
         <page name='Closures'/>
         <page name='Todo Items'/>
         <page name='Subscripts'/>
+        <page name='ARC'/>
     </pages>
 </playground>
