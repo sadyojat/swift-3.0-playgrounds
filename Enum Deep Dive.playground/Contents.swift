@@ -2,7 +2,7 @@
 
 import UIKit
 
-var str = "Enum deep dive"
+var str = "Nested Enums"
 
 /*
  Enums can be nested as shown in the example below to enable collecting relevant information together.
