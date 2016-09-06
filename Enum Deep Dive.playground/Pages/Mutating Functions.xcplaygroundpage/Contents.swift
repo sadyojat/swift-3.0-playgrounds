@@ -30,9 +30,4 @@ stateMachine.next(exception: true)
 stateMachine
 
 
-
-
-
-
-
 //: [Next](@next)
