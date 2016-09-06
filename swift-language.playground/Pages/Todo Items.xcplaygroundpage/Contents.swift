@@ -19,4 +19,17 @@ var str = "Todo Items"
  */
 
 
+//------------------------------------------------------------------------------------//
+// Basics
+//------------------------------------------------------------------------------------//
+
+/*
+ 1. Global constants & variables are always computed lazily
+ 2. Define type properties with static keyword
+ 3. For computed properties use class keyword to allow subclasses to override the implementation
+ 4.
+ */
+
+
+
 //: [Next](@next)

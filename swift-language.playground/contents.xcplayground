@@ -10,5 +10,6 @@
         <page name='Subscripts'/>
         <page name='ARC'/>
         <page name='Enumerations'/>
+        <page name='Structs_Classes'/>
     </pages>
 </playground>
