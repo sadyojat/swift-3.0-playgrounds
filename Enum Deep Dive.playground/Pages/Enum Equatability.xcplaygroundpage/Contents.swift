@@ -4,6 +4,12 @@ import Foundation
 
 var str = "Enum Equatability"
 
+/*
+ For a type to be Equatable, there must exist an implementation of the == operator function, which accepts a matching type:
+ For VALUE types like struct/ enums, Equality is determining by comparing the values of all the components
+ 
+ */
+
 enum Example {
     case NumberTuple(one: Int, two: String)
     case StringTuple(oneStr: String, twoStr: String)
