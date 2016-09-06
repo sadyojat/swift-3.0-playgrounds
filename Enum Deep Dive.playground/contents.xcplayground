@@ -4,5 +4,6 @@
         <page name='Methods &amp; Properties'/>
         <page name='Nested Enums'/>
         <page name='Mutating Functions'/>
+        <page name='Using enum initializers'/>
     </pages>
 </playground>
