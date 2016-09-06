@@ -3,5 +3,6 @@
     <pages>
         <page name='Methods &amp; Properties'/>
         <page name='Nested Enums'/>
+        <page name='Mutating Functions'/>
     </pages>
 </playground>
