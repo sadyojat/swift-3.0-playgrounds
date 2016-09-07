@@ -6,5 +6,6 @@
         <page name='Mutating Functions'/>
         <page name='Using enum initializers'/>
         <page name='Enum Equatability'/>
+        <page name='Enum Extensions'/>
     </pages>
 </playground>
