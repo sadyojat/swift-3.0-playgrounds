@@ -7,5 +7,6 @@
         <page name='Using enum initializers'/>
         <page name='Enum Equatability'/>
         <page name='Enum Extensions'/>
+        <page name='Recursive Enums'/>
     </pages>
 </playground>
