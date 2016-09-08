@@ -38,7 +38,9 @@ struct BFS<T: Comparable> {
         }
     }
     var elements:[T]? = nil { didSet { process() } }
-    
+    var inorder:[T]? { return inorderTraversal() }
+    var preorder:[T]? { return preorderTraversal() }
+    var postorder:[T]? { return postorderTraversal() }
     
     private mutating func process() {
         guard let elements = elements else { return }
@@ -77,6 +79,18 @@ struct BFS<T: Comparable> {
                 parent.right = Node(value: value)
             }
         }
+    }
+    
+    private func inorderTraversal() -> [T]? {
+        return nil
+    }
+    
+    private func preorderTraversal() -> [T]? {
+        return nil
+    }
+    
+    private func postorderTraversal() -> [T]? {
+        return nil
     }
 }
 
