@@ -28,7 +28,13 @@ class Node <T: Comparable> {
     }
 }
 
-struct BFS<T: Comparable> {
+// This enum cannot be nested within the generic struct
+enum Traversal {
+    case Inorder, Preorder, Postorder
+}
+
+
+struct BST<T: Comparable> {
     private var root: Node<T>? = nil
     var isEmpty: Bool {
         if let list = elements {
@@ -38,7 +44,6 @@ struct BFS<T: Comparable> {
         }
     }
     var elements:[T]? = nil { didSet { process() } }
-    
     
     private mutating func process() {
         guard let elements = elements else { return }
@@ -78,10 +83,38 @@ struct BFS<T: Comparable> {
             }
         }
     }
+    
+    
+    // MARK: Depth First Traversal logic
+    private func traverse(_ traversal: Traversal, _ node: Node<T>?)  {
+        guard node != nil else {return}
+        switch traversal {
+        case .Inorder:
+            print(node?.value)
+            traverse(traversal, node?.left)
+            traverse(traversal, node?.right)
+        case .Preorder:
+            traverse(traversal, node?.left)
+            node?.value
+            traverse(traversal, node?.right)
+        case .Postorder:
+            traverse(traversal, node?.right)
+            node?.value
+            traverse(traversal, node?.left)
+        }
+    }
+    
+    // wrapper function that triggers dfs
+    func dfs(_ traversal: Traversal) {
+        traverse(traversal, root)
+    }
 }
 
-var bfs = BFS<Int>()
-bfs.elements = sample
+var bst = BST<Int>()
+bst.elements = sample
+bst.dfs(.Inorder)
+bst.dfs(.Preorder)
+bst.dfs(.Postorder)
 
 
 
