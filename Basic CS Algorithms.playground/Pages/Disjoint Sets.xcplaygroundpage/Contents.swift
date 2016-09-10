@@ -120,6 +120,7 @@ struct PeopleMap {
     }
     
     func relate(first a: String, second b: String) {
+        guard !knows(first: a, second: b) else { return }
         guard var p1 = find(a), var p2 = find(b) else { return }
         union(first: &p1, second: &p2)
     }
@@ -147,7 +148,7 @@ peopleMap.relate(first: "Sundar Pichai", second: "Tim Cook")
 peopleMap.relate(first: "Vishal Sikka", second: "Narendra Modi")
 peopleMap.relate(first: "Vishal Sikka", second: "Barack Obama")
 peopleMap.relate(first: "Mark Zuckerberg", second: "Narendra Modi")
-//peopleMap.relate(first: "Narendra Modi", second: "Barack Obama")
+peopleMap.relate(first: "Narendra Modi", second: "Barack Obama")
 
 peopleMap.nodes
 
