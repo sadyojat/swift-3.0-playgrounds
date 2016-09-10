@@ -3,5 +3,6 @@
     <pages>
         <page name='BST &amp; DFS'/>
         <page name='Disjoint Sets'/>
+        <page name='Kruskal&apos;s Algorithm'/>
     </pages>
 </playground>
